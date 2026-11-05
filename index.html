@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lars Sigrist – bald online</title>
+  <meta name="description" content="Hier entsteht die Portfolio-Seite von Lars Sigrist.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="wrap">
+    <div class="intro">
+    <p class="status"><span class="dot" aria-hidden="true"></span>// im Aufbau</p>
+
+    <h1>Lars Sigrist<span class="accent">.</span></h1>
+
+    <p class="lead">Hier entsteht gerade meine Portfolio-Seite. Schau bald wieder vorbei.</p>
+
+    <ul class="links">
+      <li><a href="https://github.com/sig-lar">GitHub ↗</a></li>
+    </ul>
+    </div>
+
+    <!-- Terminal: Die Zeilen werden per script.js nacheinander "getippt" -->
+    <div class="terminal" aria-label="Terminal: Portfolio wird gebaut">
+      <div class="terminal__bar">
+        <!-- Fensterknöpfe wie bei macOS: Schliessen, Minimieren, Vollbild -->
+        <span class="win-btn win-btn--close" aria-hidden="true">
+          <svg viewBox="0 0 12 12"><path d="M3.5 3.5l5 5M8.5 3.5l-5 5"></path></svg>
+        </span>
+        <span class="win-btn win-btn--min" aria-hidden="true">
+          <svg viewBox="0 0 12 12"><path d="M3 6h6"></path></svg>
+        </span>
+        <span class="win-btn win-btn--max" aria-hidden="true">
+          <svg viewBox="0 0 12 12"><path class="fill" d="M3 3h4.2L3 7.2z M9 9H4.8L9 4.8z"></path></svg>
+        </span>
+        <span class="terminal__title">bash — lars@portfolio</span>
+      </div>
+      <div class="terminal__body" id="terminal">
+        <p class="t-line"><span class="t-prompt">lars@portfolio</span><span class="t-dim">:~$</span> <span class="t-cmd">whoami</span></p>
+        <p class="t-line t-out">Lars · Plattformentwickler EFZ in Ausbildung</p>
+        <p class="t-line"><span class="t-prompt">lars@portfolio</span><span class="t-dim">:~$</span> <span class="t-cmd">git clone portfolio</span></p>
+        <p class="t-line t-out">Cloning into 'portfolio'... fertig.</p>
+        <p class="t-line"><span class="t-prompt">lars@portfolio</span><span class="t-dim">:~$</span> <span class="t-cmd">./build.sh</span></p>
+        <p class="t-line t-out t-progress">
+          <span>Baue Portfolio</span>
+          <span class="bar" role="progressbar" aria-label="Fortschritt" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+            <span class="bar__fill" id="progress"></span>
+          </span>
+          <span class="t-percent" id="percent">100 %</span>
+        </p>
+        <p class="t-line t-out t-done">Status: <span class="accent">bald online</span></p>
+        <p class="t-line"><span class="t-prompt">lars@portfolio</span><span class="t-dim">:~$</span> <span class="cursor" aria-hidden="true"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">© 2026 Lars Sigrist</footer>
+</body>
+</html>
